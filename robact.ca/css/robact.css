@@ -1,0 +1,443 @@
+/*Robact logo color: #1497CB. Letter color: #717076*/
+html{
+	width: 100%;
+	height: 100%;
+	min-height: 20em;
+	min-width: 50em;
+	overflow: hidden;
+}
+body{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans",sans-serif;
+	width: 100%;
+	height: 100%;
+	min-height: 20em;
+	min-width: 50em;
+}
+
+/*General rules*/
+/*Font for titles*/
+.title{
+	color: #1497CB;
+	text-decoration: underline;
+	font-weight: bold;
+	margin-bottom: 0.35em;
+	display: block;
+	font-size: 1.2em;
+	text-align: left;
+}
+.subTitle{
+	font-weight: bold;
+	margin-bottom: 0.2em;
+	display: block;
+	font-size: 1.05em;
+	text-align: left;
+}
+/*Font for normal text*/
+.text{
+	color: #5F5E64;
+	/*color: #3B3B3B;*/
+	font-weight: normal;
+}
+/*Text align justify left center*/
+.alignJustify{
+	text-align: justify;
+}
+.alignLeft{
+	text-align: left;
+}
+.textCenter{
+	text-align: center;
+}
+/*Lists, paragraphs, etc*/
+.list{
+	margin-left: 2em;
+	text-align: left;
+	list-style-type: square;
+}
+.spaceList > li{
+	margin-bottom: 0.3em;
+}
+.paragraph{
+	margin-bottom: 2em;
+	display: block;
+}
+.breakLine{
+	margin-bottom: 0.7em;
+	display: block;
+}
+/*Tables*/
+.tableCentered{
+	display: table;
+	margin: 0 auto;
+	padding:2%;
+	padding-bottom: 0;
+}
+.tableCell{
+	display: table-cell;	
+}
+
+
+
+/*Stuff inside header-wrap*/
+#header-wrap{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 21%;
+	min-width: 12em;
+	height: 100%;
+	background-color: #1497CB;
+	overflow-y: auto;
+	overflow-x:hidden;
+}
+
+.logo{
+	margin-bottom: 1em;
+	width: 100%;
+	background-color: white;
+}
+#img-logo{
+	width: 88%;
+	padding:6%;
+	/*padding-right: 0;*/
+}
+#nav{
+	position: relative;
+	height: 78%;
+	left:0;
+	bottom:0;
+}
+#nav ul{
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+    text-align: right;
+    position: absolute;
+    top:25%;
+    right:12%;
+}
+#nav ul li{
+	margin-bottom: 1em;
+}
+#nav ul li a{
+	text-decoration: none;
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #B4DAE9;
+	padding: 0.20em 0.25em 0.15em 0.25em;
+	background-color: #1497CB;
+	border-radius: 1px;
+}
+#nav ul li a:hover{
+	color: #D2EDF6;
+	background-color: #1497CB;
+}
+/*#nav ul li a:active, #nav ul li a:focus{
+	color: #3D3C3E;
+	background-color: #1497CB;
+}*/
+/*This style is to highlight the current selected menu item*/
+#nav ul li a.selectedPage{
+	color: #5F5E64;
+	/*background-color: #B4DAE9;*/
+	background-color: #D2EDF6;
+}
+
+
+
+/*General stuff inside main-wrap*/
+#main-wrap{
+	position: fixed;
+	width: 79%;
+	min-width: 15em;
+	height: auto;
+/*	height: 100%;
+	min-height: 100%;*/
+	top:0;
+	right:0;
+	bottom: 4em;
+	margin-left: 21%; 
+	color: #5F5E64;
+	/*color: #313131;*/
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+
+
+/*For index.html*/
+#index-title-wrap{
+	margin: 0 auto;
+	margin-top: 4%;
+	margin-bottom: 1em;
+	max-width: 32em;
+	text-align: center;
+	border-top: #1497CB solid 4px;
+	border-bottom: #1497CB solid 4px;
+}
+
+.indexTitle{
+	margin-top: 0.25em;
+	margin-bottom: 0.35em;
+	display: block;
+	font-size: 2.6em;
+	text-align: center;
+}
+
+.indexSubTitle{
+	margin-bottom: 0.2em;
+	display: block;
+	font-size: 2.1em;
+	text-align: center;
+}
+#index-content{
+	max-height: 42em;
+}
+
+#index-text{
+	display: block;
+	margin: 0 auto;
+	padding-top: 1.8em;
+	max-width: 20em;
+	min-width: 5em;
+	position: relative;
+	text-align: center;
+	font-size: 1.3em;
+}
+.imgIndex{
+	width: 25%;
+	max-width: 15em;
+	margin:0 1em 0 1em;
+	margin-right:2%; 
+	margin-left:2%;
+}
+#imgIndexPaul{
+	display: block;
+	position: absolute;
+}
+#imgIndexFrance{
+	display: block;
+	position: absolute;
+	right:0em;
+}
+
+
+/*For equipe.html*/
+.equipeHeader{
+	display: block;
+	height: 10em;
+	margin: 1em 0em 0em 1em;
+}
+.imgEquipe{
+	max-width: 8em;
+	float:left;
+	margin: 0em 1.5em 0.1em 0em;
+}
+.equipePaul{
+	padding-right: 0.7em;
+	width: 50%;
+}
+.equipeFrance{
+	padding-left: 0.7em;
+	width: 50%;
+}
+.equipeContent{
+	position:relative;
+	top:0;
+	margin-bottom: 2em;
+}
+.linkedIn{
+	display: inline-block;
+	margin-top: 0.8em;
+}
+.displayNone{
+	display: none;
+}
+
+.expBtnImg{
+	display: block;
+	margin: 0 auto;
+	/*background-color: #1497CB;*/
+	height: 100%;
+}
+.expBtnImg:hover{
+	background-color: #41b5e5;
+}
+.expBtnDiv{
+	display: block;
+	margin: 0 auto;
+	padding: 0.15em 0em 0.15em 0em;
+	height: 1.8%;
+	background-color: #1497CB;
+	margin-bottom: 1em;
+	width: 60%;
+}
+.expBtnDiv:hover{
+	background-color: #41b5e5;
+}
+
+
+
+/*For services.html*/
+#services{
+	margin: 0 auto;
+	margin-top: 3em;
+	padding: 0 2em 0 2em;
+	width: auto;
+	max-width: 33em;
+}
+
+
+/*For nousjoindre.html*/
+.contactTable{
+	margin-top: 15%;
+	margin-bottom: 15%;
+}
+.contactCell{
+	min-width: 16em;
+	padding: 0;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.contactInfo{
+	display: block;
+	margin-bottom: 2em;
+	margin-top: 2em;
+	height: 2.3em;
+	line-height: 2.3em;
+}
+.contactInfoText{
+	display: inline-block;
+	margin-left: 1em
+}
+.contactInfoImg{
+	display: inline-block;
+	float:left;
+}
+/*max width of images on nousjoindre page*/
+.maxWidth3em{
+	max-width: 2.3em;
+}
+
+
+/*Footer*/
+footer{
+	position: fixed;
+	width: 78%;
+	min-width: 15em;
+	text-align: left;
+	height: 4em;
+	line-height: 4em;
+	bottom:0;
+	right: 0;
+	margin-left: 21%;
+	padding-left: 1%;
+	color: #D2EDF6;
+	/*background-color: #3D3C3E;*/
+	background-color: #5F5E64;
+	opacity: 0.93;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+
+/*Media queries for different media sizes*/
+@media all and (max-width: 78em){
+	#imgIndexFrance{display: none;}
+	#imgIndexPaul{display: none;}
+}
+/*58em is the point when side menu stops shrinking horizontaly*/
+@media all and (max-width: 58em){
+	#main-wrap{
+		margin: 0;
+		left:10.955em;
+		width: 45em;
+		overflow-x:scroll;
+	}
+	footer{
+		margin:0;
+		left:12em;
+		width: 45em;
+	}
+}
+/*Adjustments for bigger size screens*/
+@media all and (min-width: 100em){
+	.imgIndex{
+		width: 25%;
+		max-width: 30em;
+	}
+
+	#services{
+		margin-top: 10em;
+		padding: 0 4em 0 4em;
+/*		border-left: #1497CB solid 4px;
+		border-right:#1497CB solid 4px;*/
+	}
+
+	.imgEquipe{
+		max-width: 11em;
+	}
+	.equipePaul{
+		padding-right: 1.2em;
+	}
+	.equipeFrance{
+		padding-left: 1.2em;
+	}
+
+	/*Font sizes*/
+	.title{
+		font-size: 1.4em;
+	}
+	.subTitle{
+		font-size: 1.25em;
+	}
+	#nav ul li a{
+		font-size: 1.6em;
+	}
+	.indexTitle{
+		font-size: 2.8em;
+	}
+	.indexSubTitle{
+		font-size: 2.3em;
+	}
+	#index-text{
+		font-size: 1.5em;
+	}
+	.text{
+		font-size: 1.1em;
+	}
+
+	.linkedIn{
+		margin-top: 2em;
+	}
+
+	.equipeHeader{
+		height: 14em;
+	}
+
+	.contactCell{
+		min-width: 18em;
+		padding: 0;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
+@media all and (min-height: 50em){
+	#index-title-wrap{
+		margin-top: 8%;
+	}
+	#index-text{
+		padding-top: 2.7em;
+	}
+	.callToActionBtn{
+		margin-top: 2.2em;
+	}
+	#services{
+		margin-top: 3em;
+	}
+}
